@@ -3,6 +3,11 @@ import State from './fundamentals/hooks/state/state'
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
+import { Callback } from './fundamentals/hooks/callback/callback';
+import Ref from './fundamentals/hooks/ref/ref';
+import RefUseCase from './fundamentals/hooks/ref/ref_use_case';
+import { Reducer } from './fundamentals/hooks/reducer/reducer';
+import { Transition } from './fundamentals/hooks/transition/Transition';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -30,6 +35,11 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <Transition />
+      <Reducer />
+      <Ref />
+      <RefUseCase />
+      <Callback />
       <div className='card'>
         <button onClick={() => setCount(count => count + 1)}>
           count is {count}
