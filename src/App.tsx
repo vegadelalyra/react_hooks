@@ -8,6 +8,7 @@ import Ref from './fundamentals/hooks/ref/ref';
 import RefUseCase from './fundamentals/hooks/ref/ref_use_case';
 import { Reducer } from './fundamentals/hooks/reducer/reducer';
 import { Transition } from './fundamentals/hooks/transition/Transition';
+import { LayoutEffect } from './fundamentals/hooks/layoutEffect/layoutEffect';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -35,6 +36,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <LayoutEffect />
       <Transition />
       <Reducer />
       <Ref />
